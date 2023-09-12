@@ -31,7 +31,7 @@ class AutoActivator(mobase.IPlugin):
         return self.__tr("Automatically activate mods after installing.")
 
     def version(self) -> mobase.VersionInfo:
-        return mobase.VersionInfo(1, 0, 0, mobase.ReleaseType.FINAL)
+        return mobase.VersionInfo(1, 0, 0, release_type=mobase.ReleaseType.FINAL)
 
     def settings(self) -> list[mobase.PluginSetting]:
         return []
