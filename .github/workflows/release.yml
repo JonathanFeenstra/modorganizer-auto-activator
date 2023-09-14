@@ -20,10 +20,10 @@ jobs:
           echo "RELEASE_NOTES<<EOF" >> $env:GITHUB_ENV
           echo $env:RELEASE_NOTES | foreach {"* " + $_} >> $env:GITHUB_ENV
           echo "EOF" >> $env:GITHUB_ENV
-        if: contains(env.RELEASE_NOTES, '\n')
+        if: ${{ env.RELEASE_NOTES }} =~ '*\n*'
       - name: Zip
         run: |
-          7z a -tzip -mx9 $env:ARCHIVE auto_activator.py LICENSE README.md
+          7z a -tzip -mx9 $env:ARCHIVE auto_activator.py LICENSE
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
