@@ -1,0 +1,22 @@
+{
+    "Name": "Auto-Activator",
+    "Author": "Jonathan Feenstra",
+    "Description": "Automatically activates mods on installation.",
+    "NexusUrl": "https://www.nexusmods.com/site/mods/648",
+    "GithubUrl": "https://github.com/JonathanFeenstra/modorganizer-auto-activator",
+    "Versions": [
+        {
+            "Version": "1.0.0",
+            "Released": "2023-09-14",
+            "MinSupport": "2.5.0",
+            "MaxSupport": "2.5.0",
+            "DownloadUrl": "https://github.com/JonathanFeenstra/modorganizer-auto-activator/releases/download/v1.0.0/AutoActivator-1.0.0.zip",
+            "PluginPath": [
+                "auto_activator.py"
+            ],
+            "ReleaseNotes": [
+                "Initial release."
+            ]
+        }
+    ]
+}
